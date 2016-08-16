@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+	<title>Flex Grid</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="./dist/bundle.css">
+</head>
+
+<body>
+	<h1>Simple Flex Grid</h1>
+	<h2>Grid</h2>
+	<div class="grid">
+		<div class="col-ms-12">
+			<div class="box">Box</div>
+		</div>
+		<div class="col-ms-9">
+			<div class="box">Box</div>
+		</div>
+		<div class="col-ms-3">
+			<div class="box">Box</div>
+		</div>
+	</div>
+
+	<h2>Adaptive Grid</h2>
+	<div class="grid">
+		<div class="col-t-6 col-d-12">
+			<div class="box">Box</div>
+		</div>
+		<div class="col-t-6 col-d-9">
+			<div class="box">Box</div>
+		</div>
+		<div class="col-t-6 col-d-3">
+			<div class="box">Box</div>
+		</div>
+	</div>
+
+	<h2>Nested grids</h2>
+	<div class="grid">
+		<div class="col-ms-6">
+			<div class="grid">
+				<div class="col-ms-9">
+					<div class="box">Box</div>
+				</div>
+				<div class="col-ms-3">
+					<div class="box">Box</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2>Simple Example</h2>
+	<div class="grid">
+		<div class="col-ms-12">
+			<div class="box">Header</div>
+		</div>
+		<div class="col-ms-2">
+			<div class="box box--large">Sedebar</div>
+		</div>
+		<div class="col-ms-10">
+			<div class="box box--large">Content Area</div>
+		</div>
+		<div class="col-ms-12">
+			<div class="box">Footer</div>
+		</div>
+	</div>
+	
+</body>
+
+</html>

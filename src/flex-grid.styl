@@ -1,0 +1,473 @@
+@import 'nib'
+
+$mobile-s = 320px
+$mobile-m = 375px
+$mobile-l = 425px
+$tablet = 768px
+$laptop = 1024px
+$desktop = 1440px
+
+* 
+	box-sizing border-box
+	&:before, &:after
+		box-sizing border-box
+
+.grid
+	display flex
+	flex-flow row wrap
+	justify-content flex-start
+
+.col
+	position relative
+	min-height 1px
+	flex 0 0 auto
+
+.col-ms-1,
+.col-ms-2,
+.col-ms-3,
+.col-ms-4,
+.col-ms-5,
+.col-ms-6,
+.col-ms-7,
+.col-ms-8,
+.col-ms-9,
+.col-ms-10,
+.col-ms-11,
+.col-ms-12,
+.col-mm-1,
+.col-mm-2,
+.col-mm-3,
+.col-mm-4,
+.col-mm-5,
+.col-mm-6,
+.col-mm-7,
+.col-mm-8,
+.col-mm-9,
+.col-mm-10,
+.col-mm-11,
+.col-mm-12,
+.col-ml-1,
+.col-ml-2,
+.col-ml-3,
+.col-ml-4,
+.col-ml-5,
+.col-ml-6,
+.col-ml-7,
+.col-ml-8,
+.col-ml-9,
+.col-ml-10,
+.col-ml-11,
+.col-ml-12,
+.col-t-1,
+.col-t-2,
+.col-t-3,
+.col-t-4,
+.col-t-5,
+.col-t-6,
+.col-t-7,
+.col-t-8,
+.col-t-9,
+.col-t-10,
+.col-t-11,
+.col-t-12,
+.col-l-1,
+.col-l-2,
+.col-l-3,
+.col-l-4,
+.col-l-5,
+.col-l-6,
+.col-l-7,
+.col-l-8,
+.col-l-9,
+.col-l-10,
+.col-l-11,
+.col-l-12,
+.col-d-1,
+.col-d-2,
+.col-d-3,
+.col-d-4,
+.col-d-5,
+.col-d-6,
+.col-d-7,
+.col-d-8,
+.col-d-9,
+.col-d-10,
+.col-d-11,
+.col-d-12
+	width 100%
+	flex-basis 100%
+
+
+//$mobile-s (ms)
+.col-ms-12
+	@extend .col
+	width 100%
+	flex-basis 100%
+
+.col-ms-11
+	@extend .col
+	width 91.66666667%
+	flex-basis 91.66666667%
+
+.col-ms-10
+	@extend .col
+	width 83.33333333%
+	flex-basis 83.33333333%
+
+.col-ms-9
+	@extend .col
+	width 75%
+	flex-basis 75%
+
+.col-ms-8
+	@extend .col
+	width 66.66666667%
+	flex-basis 66.66666667%
+
+.col-ms-7
+	@extend .col
+	width 58.33333333%
+	flex-basis 58.33333333%
+
+.col-ms-6
+	@extend .col
+	width 50%
+	flex-basis 50%
+
+.col-ms-5
+	@extend .col
+	width 41.66666667%
+	flex-basis 41.66666667%
+
+.col-ms-4
+	@extend .col
+	width 33.33333333%
+	flex-basis 33.33333333%
+
+.col-ms-3
+	@extend .col
+	width 25%
+	flex-basis 25%
+
+.col-ms-2
+	@extend .col
+	width 16.66666667%
+	flex-basis 16.66666667%
+
+.col-ms-1
+	@extend .col
+	width 8.33333333%
+	flex-basis 8.33333333%
+
+//$mobile-m (mm)
+@media all and (min-width: $mobile-m)
+	.col-mm-12
+		@extend .col
+		width 100%
+		flex-basis 100%
+
+	.col-mm-11
+		@extend .col
+		width 91.66666667%
+		flex-basis 91.66666667%
+
+	.col-mm-10
+		@extend .col
+		width 83.33333333%
+		flex-basis 83.33333333%
+
+	.col-mm-9
+		@extend .col
+		width 75%
+		flex-basis 75%
+
+	.col-mm-8
+		@extend .col
+		width 66.66666667%
+		flex-basis 66.66666667%
+
+	.col-mm-7
+		@extend .col
+		width 58.33333333%
+		flex-basis 58.33333333%
+
+	.col-mm-6
+		@extend .col
+		width 50%
+		flex-basis 50%
+
+	.col-mm-5
+		@extend .col
+		width 41.66666667%
+		flex-basis 41.66666667%
+
+	.col-mm-4
+		@extend .col
+		width 33.33333333%
+		flex-basis 33.33333333%
+
+	.col-mm-3
+		@extend .col
+		width 25%
+		flex-basis 25%
+
+	.col-mm-2
+		@extend .col
+		width 16.66666667%
+		flex-basis 16.66666667%
+
+	.col-mm-1
+		@extend .col
+		width 8.33333333%
+		flex-basis 8.33333333%
+
+
+//$mobile-l (ml)
+@media all and (min-width: $mobile-l)
+	.col-ml-12
+		@extend .col
+		width 100%
+		flex-basis 100%
+
+	.col-ml-11
+		@extend .col
+		width 91.66666667%
+		flex-basis 91.66666667%
+
+	.col-ml-10
+		@extend .col
+		width 83.33333333%
+		flex-basis 83.33333333%
+
+	.col-ml-9
+		@extend .col
+		width 75%
+		flex-basis 75%
+
+	.col-ml-8
+		@extend .col
+		width 66.66666667%
+		flex-basis 66.66666667%
+
+	.col-ml-7
+		@extend .col
+		width 58.33333333%
+		flex-basis 58.33333333%
+
+	.col-ml-6
+		@extend .col
+		width 50%
+		flex-basis 50%
+
+	.col-ml-5
+		@extend .col
+		width 41.66666667%
+		flex-basis 41.66666667%
+
+	.col-ml-4
+		@extend .col
+		width 33.33333333%
+		flex-basis 33.33333333%
+
+	.col-ml-3
+		@extend .col
+		width 25%
+		flex-basis 25%
+
+	.col-ml-2
+		@extend .col
+		width 16.66666667%
+		flex-basis 16.66666667%
+
+	.col-ml-1
+		@extend .col
+		width 8.33333333%
+		flex-basis 8.33333333%
+
+
+//$tablet (t)
+@media all and (min-width: $tablet)
+	.col-t-12
+		@extend .col
+		width 100%
+		flex-basis 100%
+
+	.col-t-11
+		@extend .col
+		width 91.66666667%
+		flex-basis 91.66666667%
+
+	.col-t-10
+		@extend .col
+		width 83.33333333%
+		flex-basis 83.33333333%
+
+	.col-t-9
+		@extend .col
+		width 75%
+		flex-basis 75%
+
+	.col-t-8
+		@extend .col
+		width 66.66666667%
+		flex-basis 66.66666667%
+
+	.col-t-7
+		@extend .col
+		width 58.33333333%
+		flex-basis 58.33333333%
+
+	.col-t-6
+		@extend .col
+		width 50%
+		flex-basis 50%
+
+	.col-t-5
+		@extend .col
+		width 41.66666667%
+		flex-basis 41.66666667%
+
+	.col-t-4
+		@extend .col
+		width 33.33333333%
+		flex-basis 33.33333333%
+
+	.col-t-3
+		@extend .col
+		width 25%
+		flex-basis 25%
+
+	.col-t-2
+		@extend .col
+		width 16.66666667%
+		flex-basis 16.66666667%
+
+	.col-t-1
+		@extend .col
+		width 8.33333333%
+		flex-basis 8.33333333%
+
+
+//$laptop (l)
+@media all and (min-width: $laptop)
+	.col-l-12
+		@extend .col
+		width 100%
+		flex-basis 100%
+
+	.col-l-11
+		@extend .col
+		width 91.66666667%
+		flex-basis 91.66666667%
+
+	.col-l-10
+		@extend .col
+		width 83.33333333%
+		flex-basis 83.33333333%
+
+	.col-l-9
+		@extend .col
+		width 75%
+		flex-basis 75%
+
+	.col-l-8
+		@extend .col
+		width 66.66666667%
+		flex-basis 66.66666667%
+
+	.col-l-7
+		@extend .col
+		width 58.33333333%
+		flex-basis 58.33333333%
+
+	.col-l-6
+		@extend .col
+		width 50%
+		flex-basis 50%
+
+	.col-l-5
+		@extend .col
+		width 41.66666667%
+		flex-basis 41.66666667%
+
+	.col-l-4
+		@extend .col
+		width 33.33333333%
+		flex-basis 33.33333333%
+
+	.col-l-3
+		@extend .col
+		width 25%
+		flex-basis 25%
+
+	.col-l-2
+		@extend .col
+		width 16.66666667%
+		flex-basis 16.66666667%
+
+	.col-l-1
+		@extend .col
+		width 8.33333333%
+		flex-basis 8.33333333%
+
+//$desktop (d)
+@media all and (min-width: $desktop)
+	.col-d-12
+		@extend .col
+		width 100%
+		flex-basis 100%
+
+	.col-d-11
+		@extend .col
+		width 91.66666667%
+		flex-basis 91.66666667%
+
+	.col-d-10
+		@extend .col
+		width 83.33333333%
+		flex-basis 83.33333333%
+
+	.col-d-9
+		@extend .col
+		width 75%
+		flex-basis 75%
+
+	.col-d-8
+		@extend .col
+		width 66.66666667%
+		flex-basis 66.66666667%
+
+	.col-d-7
+		@extend .col
+		width 58.33333333%
+		flex-basis 58.33333333%
+
+	.col-d-6
+		@extend .col
+		width 50%
+		flex-basis 50%
+
+	.col-d-5
+		@extend .col
+		width 41.66666667%
+		flex-basis 41.66666667%
+
+	.col-d-4
+		@extend .col
+		width 33.33333333%
+		flex-basis 33.33333333%
+
+	.col-d-3
+		@extend .col
+		width 25%
+		flex-basis 25%
+
+	.col-d-2
+		@extend .col
+		width 16.66666667%
+		flex-basis 16.66666667%
+
+	.col-d-1
+		@extend .col
+		width 8.33333333%
+		flex-basis 8.33333333%
